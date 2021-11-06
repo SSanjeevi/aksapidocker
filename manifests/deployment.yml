@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "testakssanjeevi-ba4e"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "testakssanjeevi-ba4e"
+  template:
+    metadata:
+      labels:
+        app: "testakssanjeevi-ba4e"
+    spec:
+      containers:
+        - name: "testakssanjeevi-ba4e"
+          image: "akscontainerregistrysanjeevi.azurecr.io/testakssanjeevi"
+          ports:
+          - containerPort: 80
