@@ -35,7 +35,7 @@ jobs:
         with:
           push: true
           tags: webapplicationcontainer20211226152353.azurecr.io/lkgapp:${{ github.sha }}
-          file: ./Dockerfile
+          file: ./WebApplicationContainer/Dockerfile
 
 
   deploy:
